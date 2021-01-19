@@ -5,7 +5,7 @@
 Bikeshare Data Analysis
 
 ### Description
-Bikeshare Data Analysis
+Bikeshare Data Analysis, with data input from user
 
 ### Files used
 bikeshare.py
@@ -24,7 +24,7 @@ bikeshare.py
     Book: Pandas Cookbook 1.x
 
 
-    Bikeshare.py developed on Anaconda Spyder
+    Bikeshare.py developed using Anaconda Spyder
     
     Author Vrinda Fernando + help from references
      
