@@ -264,26 +264,9 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
-def main():
-
-    print('\nWelcome to the Bikeshare statistics portal')
     
-    while True:
-        city, month, day = get_filters() 
-        print('\n')
-        print('-'*75)
-        print('Calculating time stats for | City: {} | Month: {} | Day: {}'.format(city, month, day))
-        #clean data defore data analysis
-        print('-'*75)
-        df = load_data(city, month, day)
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
-        user_stats(df)
-        
-        #display 5 rows of aw data if user input = y/yes
+def view_five(df):
+    #display 5 rows of aw data if user input = y/yes
         
         view_rawdata = input('Would you like to view 5 rows of individual trip data? Enter (y)es or (n)o[Default]: ').lower()
         start_loc = 0  
@@ -309,8 +292,29 @@ def main():
         #restart program, if user wants
         
         restart = input('Would you like to rerun with varying parameters? Enter (y)es or (n)o[Default]: ')
+        
         if restart.lower() != 'y':
-            break
+            return
+
+
+def main():
+
+    print('\nWelcome to the Bikeshare statistics portal')
+    
+    while True:
+        city, month, day = get_filters() 
+        print('\n')
+        print('-'*75)
+        print('Calculating time stats for | City: {} | Month: {} | Day: {}'.format(city, month, day))
+        #clean data defore data analysis
+        print('-'*75)
+        df = load_data(city, month, day)
+        time_stats(df)
+        station_stats(df)
+        trip_duration_stats(df)
+        user_stats(df)
+        view_five(df)
+        
 
 
 if __name__ == "__main__":
