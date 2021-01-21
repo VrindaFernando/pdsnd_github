@@ -6,7 +6,7 @@ Bikeshare Data Analysis
 
 ### Description
 Bikeshare Python program. Giving Bikeshare Statistics & further
-Data Analysis, with data input from user.
+Data Analysis relevent to data input from user.
 
 ### Files used
 bikeshare.py
