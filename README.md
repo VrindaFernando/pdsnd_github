@@ -7,9 +7,13 @@ Bikeshare Data Analysis
 ### Description
 Bikeshare Python program. Giving Bikeshare Statistics & further
 Data Analysis relevent to data input from user.
+Bikeshare.py developed using Anaconda Spyder
+Author Vrinda Fernando + help from references
 
 ### Files used
 bikeshare.py
+data files : chicago.csv, new_york_city.csv, washington.csv
+
 
 ### Credits
 """
@@ -25,9 +29,7 @@ bikeshare.py
     Book: Pandas Cookbook 1.x
 
 
-    Bikeshare.py developed using Anaconda Spyder
-    
-    Author Vrinda Fernando + help from references
+
      
 
 """  
