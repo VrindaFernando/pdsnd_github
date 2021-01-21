@@ -266,7 +266,13 @@ def user_stats(df):
     print('-'*40)
     
 def view_five(df):
-    #display 5 rows of aw data if user input = y/yes
+    #
+    """Display 5 rows of aw data if user input = y/yes and restart program if user wishes
+    
+    If User Wishes to stop they press N
+    
+    
+    """
         
         view_rawdata = input('Would you like to view 5 rows of individual trip data? Enter (y)es or (n)o[Default]: ').lower()
         start_loc = 0  
